@@ -1,0 +1,60 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-family: 'Roboto','Noto Sans', sans-serif;
+}
+
+body{
+  display: flex;
+  background-color: #000a1e;
+  border: 1px solid #001641;
+  color: rgba(255,255,255,0.7);
+  
+  font-weight: bold;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.layoutVertical {
+  display: flex;
+  flex-direction: row;
+}
+.LabelVertical{
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.LabelVertical-horizonh{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #00d8ff;
+  
+}
+.LabelVertical-value{
+  text-align: center;
+}
+.layoutHor{
+  display: flex;
+  flex-direction: row;
+}
+
+span .LabelVertical-unit{
+  font-size: 0.7em;
+
+  display: inline-block;
+  margin-left: 0.3em;
+  font-weight: normal
+
+}
