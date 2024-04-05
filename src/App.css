@@ -3,12 +3,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
+
+
+.link {
+  text-decoration: none;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 html{
   height: 100%;
+  width: 100%;
   font-family: 'Roboto','Noto Sans', sans-serif;
 }
+
 
 body{
   display: flex;
@@ -18,13 +35,82 @@ body{
   
   font-weight: bold;
   height: 100%;
+  width: 100%;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  
+  width: 100%;
+  height: 100%;
 }
+
+.App{
+  display: flex;
+  flex-direction: column;
+}
+
+.Header{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+.Nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.Nav > ul > li {
+  --dt-row-selected: 13, 110, 253;
+  --dt-row-selected-text: 255, 255, 255;
+  --dt-row-selected-link: 9, 10, 11;
+  --dt-row-stripe: 0, 0, 0;
+  --dt-row-hover: 0, 0, 0;
+  --dt-column-ordering: 0, 0, 0;
+  --dt-html-background: white;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  background-color: #001848;
+  background-image: linear-gradient(to top,#001744,#002b81);
+  height: 60px;
+  line-height: 18px;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  text-align: right;
+  background-size: auto !important;
+  border-radius: 0 !important;
+
+  width: 100%;
+ 
+  margin-left: 0.2em;;
+}
+.Nav > ul > li > a{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-decoration: none;
+color: #fff;
+width: 100%;
+height: 100%;
+
+}
+
+
+
 
 .layoutVertical {
   display: flex;
@@ -57,4 +143,28 @@ span .LabelVertical-unit{
   margin-left: 0.3em;
   font-weight: normal
 
+}
+
+
+
+
+div{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.left{
+  align-self: auto;
+}
+.right {
+  display: flex;
+  flex-direction: column; /* 자식 요소들을 수직으로 정렬 */
+}
+
+
+img{ 
+  width: 100%; 
+  height: 100%;
+  overflow: hidden;
 }

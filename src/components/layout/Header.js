@@ -1,20 +1,13 @@
-import React, { useState, useEffect } from 'react';
-
+import React from 'react';
 const Header = (props) => {
-    const [params, setParams] = useState(props);
-
-    useEffect(() => {
-        // props가 변경될 때마다 params를 업데이트합니다.
-        setParams(props);
-    }, [props]);
-
     return (
-        <div className="label">
-            <span className="label-text">
-                <div className='label-txt'>{params.txt}</div>
-                <div className='label-value'>{params.value}</div>
-                <div className='label-unit'>{params.unit}</div>
-            </span>
+        <div className="Header">
+           <div className='left'>
+                <img src="/images/logo/logo_nivus.png" alt="Nivus Logo" />
+            </div>
+            <div className='right'>
+               <img src="/images/logo/EH_logo.png" alt="Nivus Logo" />
+            </div>
         </div>
     )
 }
