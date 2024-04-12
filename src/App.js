@@ -13,8 +13,8 @@ const router = createBrowserRouter(
       <Route path='/' element={<InfluentFlow />} />
       <Route path='Abac' element={<Abac />} />
       <Route path='ptn' element={<Abac />} />
-      <Route path='mnt' element={<Abac />} />
-      <Route path='ret' element={<Abac />} />
+      <Route path='mnt' element={<InfluentFlow />} />
+      <Route path='mnt12' element={<Abac />} />
     </Route>
   )
 )

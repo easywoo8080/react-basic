@@ -16,7 +16,8 @@ function RootLayout() {
             {/* active 클래스 제공 */}
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='Abac'>Abac</NavLink></li>
-            <li><NavLink to='ptn'>Abac</NavLink></li>
+            <li><NavLink to='ptn'>ptn</NavLink></li>
+            <li><NavLink to='mnt'>mnt</NavLink></li>
             <li><NavLink to='mnt'>Abac</NavLink></li>
           </ul>
         </nav>
