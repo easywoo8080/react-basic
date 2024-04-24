@@ -44,7 +44,7 @@ axios.get('http://localhost:9190/ptn/ajaxPtnInfluent.do')
     .catch(function(error) {
         console.error(error);
     });
-
+ 
 
 
     return (
